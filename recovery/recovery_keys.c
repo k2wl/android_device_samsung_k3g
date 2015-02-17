@@ -1,9 +1,7 @@
 #include <linux/input.h>
-
 #include "recovery_ui.h"
 #include "common.h"
 #include "extendedcommands.h"
-
 
 int device_toggle_display(volatile char* key_pressed, int key_code) {
     int alt = key_pressed[KEY_LEFTALT] || key_pressed[KEY_RIGHTALT];
